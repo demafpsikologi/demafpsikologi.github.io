@@ -1,0 +1,307 @@
+
+
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 24px;
+}
+
+/* Sign Up Button */
+.button {
+    border-radius: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/jumbotron1.jpg);
+    background-size: cover;
+    height: 540px;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: 110px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 200;
+    font-size: 48px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Panel Info */
+.panel-info {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -120px;
+    background-color: white;
+    padding: 30px;
+}
+
+.panel-info img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-info h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.panel-info p {
+    font-size: 14px;
+    color: slategray;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Description */
+.description {
+    margin-top: 100px;
+    text-align: center;    
+}
+
+.description h3 {
+    font-size: 32px;
+    font-family: Kalam;
+    color: #672222; 
+    margin-top: 10px;  
+}
+
+.description p {
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.description img {
+    border-radius: 20px;
+}
+
+/* read more button */
+.read-more-button {
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Carousel */
+#testimonial .container-fluid {
+    margin-top: 50px;
+    
+    padding: 100px;
+}
+
+#testimonial .container-fluid .title {
+    font-family: Viga;
+}
+
+.carousel-inner .carousel-item .img-box {
+    width: 135px;
+    height: 135px;
+}
+
+.carousel-control-prev {
+    left: -100px;    
+}
+
+.carousel-control-next {
+    right: -100px;    
+}
+
+#testimonial .carousel-item p {
+    font-family: Montserrat;
+}
+
+/* Articles */
+.articles-section {
+    margin-top: 50px;
+}
+
+.articles-section h2 {
+    font-family: Kalam;
+    color: #672222;
+    font-size: 250%;
+}
+
+.articles-section hr {
+    border-width: 3px;
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.articles-body img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Academic Info */
+.academic-section {
+    margin-top: 50px;
+}
+
+.academic-info-body img {
+    height: 250px;
+    border-radius: 10px;
+}
+
+.academic-section h2 {
+    font-family: Kalam;
+    color: #672222;
+    font-size: 250%;
+}
+
+.academic-section hr {
+    border-width: 3px;
+    width: 360px;
+    border-top: 3px solid #999;
+}
+
+/* Events */
+.events-container {
+    margin-top: 50px;
+}
+.events-container h2 {
+    font-family: Kalam;
+    color: #672222;
+    font-size: 250%;
+}
+
+.events-container hr {
+    border-width: 3px;
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+/* Quote */
+.quote-box {
+    margin-top: 50px;
+}
+
+.quote-content {
+    font-family: Kalam;
+    color: #fff;
+    padding: 50px;
+    background-color: #ff9800;
+}
+
+.quote-content h5 {
+    font-size: 95%;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+}
+
+/* Connect */
+#connect {
+    background-color: #673ab7;
+    padding: 0 0 12%;
+    font-family: Kalam;
+    font-size: 200%;
+    color: #fff;
+}
+
+#connect h2 {
+    font-size: 80%;
+}
+
+.social a {
+    padding: 3%;
+    color: #fff;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: white !important; 
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7)
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        margin-bottom: -3px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        color: white;
+        text-align: center;
+        margin-top: 180px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        font-weight: 200;
+        font-size: 60px;
+    }
+
+    .description {
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    #testimonial .container-fluid {
+        padding: 100px;
+        margin-top: 50px;
+        
+    }
+
+    .description h3 {
+        font-size: 32px;
+        font-family: Kalam;
+        color: #672222;  
+    }
+    
+    .quote-content h5 {
+        font-size: 300%;
+    }
+
+    #connect {
+        font-size: 500%;
+    }
+
+    #connect h2 {
+        font-size: 100%
+    }
+    
+}
